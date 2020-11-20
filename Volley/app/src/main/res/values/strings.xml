@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Volley</string>
+    <string name="http_url_com">http://url.com</string>
 </resources>
