@@ -25,8 +25,8 @@ import java.util.List;
 
 public class MainActivity<URL_DATA> extends AppCompatActivity {
 
-    private static final String URL_DATA = "";
-    private static final URL_DATA= "https://api.github.com/search/users?q=language:java+location:nairobi";
+
+    private static final String URL_DATA= "https://api.github.com/search/users?q=language:java+location:nairobi";
 
     private RecyclerView recyclerView;
     private DevelopersAdapter myAdapter;
