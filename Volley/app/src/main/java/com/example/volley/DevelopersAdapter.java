@@ -24,7 +24,9 @@ public class DevelopersAdapter extends RecyclerView.Adapter<DevelopersAdapter.Vi
     public static final String KEY_IMAGE = "image";
     public static final String KEY_URL = "url";
 
-    public DevelopersAdapter(List<DeveloperList> developerList, Context applicationContext) {
+    public DevelopersAdapter(List<DeveloperList> developerList, Context context) {
+        this.developerList = developerList;
+        this.mContext = context;
     }
 
     @NonNull
@@ -62,7 +64,7 @@ public class DevelopersAdapter extends RecyclerView.Adapter<DevelopersAdapter.Vi
         //the constructor
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-//initialize view objects
+            //initialize view objects
             login = itemView.findViewById(R.id.username);
             avatar_url = itemView.findViewById(R.id.imageView);
             html_url = itemView.findViewById(R.id.html_url);
